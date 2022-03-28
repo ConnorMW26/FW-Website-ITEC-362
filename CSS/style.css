@@ -1,0 +1,38 @@
+.logohead{
+  float: left;
+  padding: 10px
+}
+
+.container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button:hover{
+  background-color:blue;
+  color: white;
+}
+
+html{
+  background-image: linear-gradient(#B1E5FA,#9787B8);
+  font-family: Roboto, sans-serif;
+  border: 20px solid grey;
+  padding: 20px
+}
+/*adds gradient to background as well as a grey border around the page to make the edges more readable.*/
+
+nav{
+  display: flex;
+  padding: 5px;
+  margin-bottom: 20px
+}
+/*give the full screen box, at a later date will change to make buttons and horizontal layout for links*/
+img{
+  width: 1024px;
+  height: auto;
+}
+
+label, h2{
+  padding-right: 5px
+}
