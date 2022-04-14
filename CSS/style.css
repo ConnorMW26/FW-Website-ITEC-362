@@ -17,7 +17,8 @@
 html{
   background-image: linear-gradient(#B1E5FA,#9787B8);
   font-family: Roboto, sans-serif;
-  border: 20px solid grey;
+  border-right: 200px solid grey;
+  border-left: 200px solid grey;
   padding: 20px
 }
 /*adds gradient to background as well as a grey border around the page to make the edges more readable.*/
@@ -35,4 +36,31 @@ img{
 
 label, h2{
   padding-right: 5px
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li{
+  display: inline
+}
+
+li a{
+  display: inline-block;
+  padding: 16px 30px;
+  color: white;
+  text-align: center;
+  background-color: grey;
+}
+
+.active{
+  background-color: #B1E5FA;
+}
+
+li a:hover{
+  background-color: #111111;
 }

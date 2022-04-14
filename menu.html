@@ -2,20 +2,19 @@
 <html lang="en">
 <title>Restraunt</title>
 <meta charset="utf-8">
-<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TWFQJ8999"></script>
   <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7TWFQJ8999');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7TWFQJ8999');
   </script>
-  <link rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
   <img style="width:100px; height:auto" class="logo" src="img/logo.png" alt="logo">
-  <link rel="stylesheet" href="mystyle.css">
   <div style="float:right; padding:10px;">
-    <h1>Altitude Italian<h1>
+    <h1>Altitude Italian</h1>
     <h2>- Italian Lounge Bar -</h2>
   </div>
   <style>
@@ -38,24 +37,24 @@
     }
 
   </style>
-</head>
-  <!-- center this image when you learn more about CSS!!! -->
+
     <nav style="border:3px solid grey">
-      <ul>
+      <ul class="nav">
         <li><a href='index.html'>Home</a></li>
         <li><a href='about.html'>About</a></li>
         <li><a href='menu.html'>Menu</a></li>
+        <li><a href='pricing.html'>Pricing</a></li>
       </ul>
     </nav>
-</head>
+  </header>
 <body class="container">
   <thead>
-  <table id="menu">
+  <table id="menu" style="width: 100%;">
   <caption>Diner Menu</caption>
-    <tr>
+    <tr style="background-color: #9787B8;">
       <th>Appetizer</th>
       <th>Main</th>
-      <th>Desert</th>
+      <th style="width: 30%;">Desert</th>
     </tr>
   </thead>
   <tbody>
@@ -70,13 +69,19 @@
       <td>Chocolate Mousse</td>
     </tr>
     <tr>
-      <td rowspan="2">Mozzarella Sticks</td>
+      <td>Mozzarella Sticks</td>
       <td>Chicken Alfredo</td>
       <td>Brownie and Ice Cream</td>
     </tr>
     <tr>
+      <td>Garlic Bread</td>
       <td>Classic Tortellini</td>
       <td>Chocolate Strawberries</td>
+    </tr>
+    <tr>
+      <td>Italian Meatballs</td>
+      <td>Spaghetti Bolognese</td>
+      <td>New York Cheese Cake</td>
     </tr>
   </tbody>
   </table>

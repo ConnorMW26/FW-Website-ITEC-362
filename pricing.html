@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Restraunt</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TWFQJ8999"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7TWFQJ8999');
+  </script>
+  <script src="js/pricing.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <img style="width:100px; height:auto" class="logo" src="img/logo.png" alt="logo">
+  <div style="float:right; padding:10px;">
+    <h1>Altitude Italian</h1>
+    <h2>- Italian Lounge Bar -</h2>
+  </div>
+
+  <!-- center this image when you learn more about CSS!!! -->
+    <nav style="border:3px solid grey">
+      <ul class="nav">
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='about.html'>About</a></li>
+        <li><a href='menu.html'>Menu</a></li>
+        <li><a href='pricing.html'>Pricing</a></li>
+      </ul>
+    </nav>
+  </header>
+<body class="container">
+  <h3 style="padding-left: 5px;">Please select the number of guest you entend to make a reservation for, and an add-on you would like!</h3>
+  <form action="" id="pricingform" onsubmit="return false;">
+    <fieldset>
+      <legend>Pricing for Your Party</legend>
+      <label for="partysize">What is Your Party Size?</label>
+      <select class="size" name="partysize"  id="partysize" onchange="getTotal()">
+        <option value="none">Select Option</option>
+        <option value="two">Two</option>
+        <option value="three">Three</option>
+        <option value="four">Four</option>
+        <option value="five">Five</option>
+        <option value="six">Six</option>
+        <option value="seven">Seven</option>
+        <option value="eight">Eight</option>
+        <option value="nine">Nine</option>
+        <option value="ten">Ten</option>
+      </select>
+      <p>
+        <label for="wine">Wine Addition ($25 per Bottle)*</label>
+        <input type="radio" id="wine" value="wine" name="chosenaddon" onclick="getTotal()">
+      </p>
+      <p>
+        <label for="datenight">Date Night (Candlelight With Flowers, wine, and a Dozen Take-Home Chocolate Strawberries) ($40)**</label>
+        <input type="radio" id="datenight" value="date" name="chosenaddon" onclick="getTotal()">
+      </p><br>
+      <div id="finalprice"></div>
+    </fieldset>
+  </form>
+</body>
+<footer>
+  <p style="font-size: 14px">* Additional bottle may be added based on group size per customer request.</p>
+  <p style="font-size: 14px">** Accomodations can be made for non-drinkers.</p>
+  <p>Created by Connor Whtieside</p>
+</footer>

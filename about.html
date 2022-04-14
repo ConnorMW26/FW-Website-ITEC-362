@@ -2,15 +2,15 @@
 <html lang="en">
 <title>Restraunt</title>
 <meta charset="utf-8">
-<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<header>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7TWFQJ8999"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7TWFQJ8999');
-</script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-7TWFQJ8999');
+  </script>
   <style>
   input[type=submit] {
      width: 100px;
@@ -40,34 +40,34 @@
     border-radius: 4px;
   }
   </style>
-  <link rel="stylesheet" href="css/style.css">
-  <img style="width:100px; height:auto" class="logo" src="img/logo.png" alt="logo">
-  <link rel="stylesheet" href="mystyle.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <img style="max-width:100px;height:auto;" class="logo" src="img/logo.png" alt="logo">
   <div style="float:right; padding:10px;">
     <h1>Altitude Italian<h1>
     <h2>- Italian Lounge Bar -</h2>
   </div>
-</head>
   <!-- center this image when you learn more about CSS!!! -->
     <nav style="border:3px solid grey">
-      <ul>
+      <ul class="nav">
         <li><a href='index.html'>Home</a></li>
         <li><a href='about.html'>About</a></li>
         <li><a href='menu.html'>Menu</a></li>
+        <li><a href='pricing.html'>Pricing</a></li>
       </ul>
     </nav>
-</head>
+</header>
 <main>
+<div class="main">
 <body class="container">
   <h1>About Altitude Italian</h1>
   <h2>Who is Altitude Italian</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <p>Founded in 2010 we have been happily serving guests for over a decade and continue to improve our service and menu keeping things fresh for returning customers</p>
   <h2>Our Menu</h2>
     <p>Altitude Italian specializes in gourmet portioned meals that we give the customer a selection from each night. There is 5 different selections each having its own identity.<p>
-    <p>You can find our menu <a href="menu.html">here</a></p>
-    <p>Check out some recipes we <a href="https://www.allrecipes.com/">Love</a></p>
+    <h3>You can find our menu <a href="menu.html">here</a></h3>
   <h2>Please Fill Out This Form:</h2>
-  <form>
+</div>
+  <form class="fillout">
     <label for="visit">When Did You Visit? (MM/DD/YY):</label>
     <input type="text" name="visit" value="Input Here" id="visit"><br>
     <label for="rate">Any Recomendations or Comments?</label>
@@ -81,11 +81,11 @@
     </select><br>
     <input class="button" type="submit" name="enter" value="Submit">
   </form><br>
-  <aside>
+  <aside class="locate">
     <h2>Our Location:</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653.8116145635954!2d-81.0345815219588!3d34.002210179749056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8bb2b1d37cbab%3A0x1169e44ab0362790!2sMain%20and%20Gervais%2C%201201-1223%20Main%20St%2C%20Columbia%2C%20SC%2029201!5e0!3m2!1sen!2sus!4v1644810232154!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </aside>
-<img src="img/plate.jpg" alt="scalopes with filet">
+<img src="img/plate.jpg" style="max-width:100%;height:auto;" alt="scalopes with filet">
 </main>
 <footer>
   <p>Created by Connor Whtieside</p>
